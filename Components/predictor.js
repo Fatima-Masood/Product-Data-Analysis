@@ -15,7 +15,12 @@ const SmartphonePricePredictor = () => {
   ];
 
   // Unique brands for dropdown
-  const brands = [...new Set(phoneData.map(item => item.brand))];
+  const brands = [
+  "Apple", "Samsung", "Huawei", "Oppo", "Vivo", "Xiaomi", "Redmi", "POCO", "Realme", 
+  "OnePlus", "Nokia", "Infinix", "Tecno", "Itel", "QMobile", "Dcode", "Motorola", 
+  "Sony", "LG", "HTC", "Lenovo", "Alcatel", "ZTE", "Nubia", "Wiko", "Meizu", 
+  "Acer", "Panasonic", "Asus", "Google", "BlackBerry"
+  ];
 
   // Form state
   const [formData, setFormData] = useState({
